@@ -1,0 +1,372 @@
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment
+$Initialized empty Git repository in E:/Training Assignments/14thJulyAssignment/.git/ 
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git init
+Reinitialized existing Git repository in E:/Training Assignments/14thJulyAssignment/.git/
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git config --global user.name "Likitha Raj"
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git config --global user.email "nagalikitha.venna@zensar.com"
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git config --global core.editor "code --wait"
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git config --edit --global
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ code sample.html
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git add .
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git commit -m "Create new html file"
+[master (root-commit) 92114d4] Create new html file
+ 1 file changed, 18 insertions(+)
+ create mode 100644 sample.html
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ ls
+sample.html
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ code sample1.md
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git add .
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git commit -m "Create new md file"
+[master 6391c91] Create new md file
+ 1 file changed, 3 insertions(+)
+ create mode 100644 sample1.md
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ ls
+sample.html  sample1.md
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git log
+commit 6391c9150169a21403dc6f4d1ad41ad0c73fcf45 (HEAD -> master)
+Author: Likitha Raj <nagalikitha.venna@zensar.com>
+Date:   Tue Jul 14 20:58:18 2020 +0530
+
+    Create new md file
+
+commit 92114d40d0f5a27d6cf69a31d4ff6e6768901137
+Author: Likitha Raj <nagalikitha.venna@zensar.com>
+Date:   Tue Jul 14 20:54:14 2020 +0530
+
+    Create new html file
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git log --oneline
+6391c91 (HEAD -> master) Create new md file
+92114d4 Create new html file
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git remote add origin https://github.com/LikithaVenna/14thjulyassignment.git
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 724 bytes | 181.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/LikithaVenna/14thjulyassignment.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git pull https://github.com/LikithaVenna/14thjulyassignment.git
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 729 bytes | 3.00 KiB/s, done.
+From https://github.com/LikithaVenna/14thjulyassignment
+ * branch            HEAD       -> FETCH_HEAD
+Updating 6391c91..27d1ff3
+Fast-forward
+ sample.html | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ code sample.html
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ code sample1.md
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git add .
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git commit -m "Add new lines in sample1.md"
+[master 4f61b6c] Add new lines in sample1.md
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 403 bytes | 134.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/LikithaVenna/14thjulyassignment.git
+   27d1ff3..4f61b6c  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git log
+commit 4f61b6cf3398227935f19e3aa60b2e7782b23545 (HEAD -> master, origin/master)
+Author: Likitha Raj <nagalikitha.venna@zensar.com>
+Date:   Tue Jul 14 21:20:33 2020 +0530
+
+    Add new lines in sample1.md
+
+commit 27d1ff3e76ea436fe489f03967a029134b3c67d8
+Author: LikithaVenna <68274754+LikithaVenna@users.noreply.github.com>
+Date:   Tue Jul 14 21:10:34 2020 +0530
+
+    Add two new table data
+
+commit 6391c9150169a21403dc6f4d1ad41ad0c73fcf45
+Author: Likitha Raj <nagalikitha.venna@zensar.com>
+Date:   Tue Jul 14 20:58:18 2020 +0530
+
+    Create new md file
+
+commit 92114d40d0f5a27d6cf69a31d4ff6e6768901137
+Author: Likitha Raj <nagalikitha.venna@zensar.com>
+Date:   Tue Jul 14 20:54:14 2020 +0530
+
+    Create new html file
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git log --oneline
+4f61b6c (HEAD -> master, origin/master) Add new lines in sample1.md
+27d1ff3 Add two new table data
+6391c91 Create new md file
+92114d4 Create new html file
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git diff 4f61 27d1
+diff --git a/sample1.md b/sample1.md
+index 13e3480..b25b665 100644
+--- a/sample1.md
++++ b/sample1.md
+@@ -1,5 +1,3 @@
+ ### This is a new md file
+-*This text will be italic* <br/>
++*This text will be italic*
+ You can see **BOLD** it is in bold
+-## Done modifications to md file
+-
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git checkout -b branch1
+Switched to a new branch 'branch1'
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git checkout -b branch2
+Switched to a new branch 'branch2'
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (branch2)
+$ code sample.html
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (branch2)
+$ git add .
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (branch2)
+$ git commit -m "Add new lists in sample.html"
+[branch2 508d941] Add new lists in sample.html
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (branch2)
+$ git status
+On branch branch2
+nothing to commit, working tree clean
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (branch2)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git merge branch2
+Updating 4f61b6c..508d941
+Fast-forward
+ sample.html | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ code sample.html
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git  diff master branch2
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git  diff branch2 master
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (branch1)
+$ code sample1.md
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (branch1)
+$ git add .
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (branch1)
+$ git commit -m "Add extra line to sample1.md"
+[branch1 eb4687d] Add extra line to sample1.md
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ code sample1.md
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git diff branch1 master
+diff --git a/sample.html b/sample.html
+index bbbbe3d..8cf861f 100644
+--- a/sample.html
++++ b/sample.html
+@@ -4,7 +4,12 @@
+     </head>
+     <body>
+         <h1>It is a sample HTML program</h1>
+-        <table>
++        <ul>
++            <li>Likitha</li>
++            <li>Tushu</li>
++            <li>Jai</li>
++        </ul>
++        <table border= "2">
+             <tr>
+                 <th>Month</th>
+                 <th>Savings</th>
+@@ -17,10 +22,6 @@
+                 <td>February</td>
+                 <td>20000</td>
+             </tr>
+-             <tr>
+-                <td>March</td>
+-                <td>15000</td>
+-            </tr>
+         </table>
+     </body>
+ </html>
+diff --git a/sample1.md b/sample1.md
+index e2cb48f..13e3480 100644
+--- a/sample1.md
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ :wq
+bash: :wq: command not found
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (branch1)
+$ code sample1.md
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (branch1)
+$ git add .
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (branch1)
+$ git commit -m "Add final line in sample1.md"
+[branch1 2164095] Add final line in sample1.md
+ 1 file changed, 1 insertion(+)
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (branch1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git merge branch1
+Merge made by the 'recursive' strategy.
+ sample1.md | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git push -u origin master
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.20 KiB | 153.00 KiB/s, done.
+Total 11 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/LikithaVenna/14thjulyassignment.git
+   4f61b6c..160ed80  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git log --oneline
+160ed80 (HEAD -> master, origin/master) Merge branch 'branch1'
+2164095 (branch1) Add final line in sample1.md
+eb4687d Add extra line to sample1.md
+508d941 (branch2) Add new lists in sample.html
+4f61b6c Add new lines in sample1.md
+27d1ff3 Add two new table data
+6391c91 Create new md file
+92114d4 Create new html file
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ code sample1.md
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ git add .
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ code sample.html
+
+HP@DESKTOP-DNNPA9S MINGW64 /e/Training Assignments/14thJulyAssignment (master)
+$ code Completeassignmentnotes.txt
